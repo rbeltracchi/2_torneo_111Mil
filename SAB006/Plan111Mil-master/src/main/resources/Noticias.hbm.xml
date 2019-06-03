@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 07-feb-2019 12:33:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.siira.alpha.Noticia" table="NOTICIAS">
+        <id name="noticia_id" type="int">
+            <column name="NOTICIA_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="fecha" type="java.util.Date">
+            <column name="FECHA" />
+        </property>
+        <property name="seccion" type="java.lang.String">
+            <column name="SECCION" />
+        </property>
+        <property name="nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+        <property name="foto" type="java.lang.String">
+            <column name="FOTO" />
+        </property>
+        <property name="volanta" type="java.lang.String">
+            <column name="VOLANTA" />
+        </property>
+        <property name="titulo" type="java.lang.String">
+            <column name="TITULO" />
+        </property>
+        <property name="copete" type="java.lang.String">
+            <column name="COPETE" />
+        </property>
+        <property name="cuerpo" type="java.lang.String">
+            <column name="CUERPO" />
+        </property>
+    </class>
+</hibernate-mapping>
